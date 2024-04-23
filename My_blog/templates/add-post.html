@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+
+{% block body %}
+<div class="row">
+<h1 class="header">Escribe blog Post</h1>
+<form class="form form-block" action="" method="post">
+<div class="col-6">
+<input class="form-control" type="text" name="title" id="title" placeholder="Blog title">
+</div>
+<div class="col-6">
+<textarea cols="73" rows="10" placeholder="Commentary" name="comment" id="comment"></textarea>
+</div>
+<button class="btn btn-primary" type="submit">Env&iacute;ar</button>
+</form>
+</div>
+{% endblock %}

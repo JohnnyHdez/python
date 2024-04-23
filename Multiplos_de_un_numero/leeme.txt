@@ -1,0 +1,15 @@
+El ejercicio está hecho en Java, Python y C++
+
+Java tiene un paquete llamado "multiplos_de_un_numero" y allí se encuentra la clase MultiplosDeUnNumero.class
+Python tiene un fichero llamado multiplos_de_un_numero.py
+C++ tiene un fichero llamado multiplos_de_un_numero.cpp y un ejecutable llamado multiplos_de_un_numero.exe
+
+Espero que el ejercicio cumpla con los requisitos exigidos.
+
+Att: Johnny Hernández Racero
+Correo electrónico: jhernandezracero@gmail.com
+
+Municipio de Cartagena - Bolivar, Colombia
+Barrio: San José de los Campanos Cra. 100B No. 38A - 04
+Código postal: 130010
+Número de celular: 317-7194412

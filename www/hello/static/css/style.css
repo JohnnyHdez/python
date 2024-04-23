@@ -1,0 +1,23 @@
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	font: bold;
+}
+
+p {
+	font-size: 1.5em;
+	text-align: justify;
+	font: normal;
+}
+
+#date {
+	font: bolder;
+	font-style: italic;
+	font: "Arial";
+}
+
+#frieren {
+	width: 240px;
+	height: 200px;
+	border: solid blue 5px;
+}
