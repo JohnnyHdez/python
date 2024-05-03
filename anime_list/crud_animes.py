@@ -123,17 +123,20 @@ class Ventana:
         marco.minsize(width=600, height=200)
 
         self.mode_state = tk.IntVar()
+
+        #Scrollbars
         canvas = tk.Canvas(master=marco)
         self.panel = ttk.Frame(master=canvas)
         canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=20, pady=10)
         scrollv = tk.Scrollbar(master=marco, orient=tk.VERTICAL, command=canvas.yview)
-        canvas.config(yscrollcommand=scrollv.set)
         scrollv.pack(side=tk.RIGHT, fill=tk.Y)
-        self.formulario()
 
+        self.formulario()
+        
         canvas.create_window(0, 0, anchor=tk.NW, window=self.panel)
         canvas.update_idletasks()
-
+        canvas.config(scrollregion=canvas.bbox(tk.ALL),yscrollcommand=scrollv.set)
+        
         marco.mainloop()
         crud = Crud()
         crud.con.close()
@@ -321,20 +324,7 @@ class Ventana:
         scroll_y.place(relx=0.97, rely=0.05, relheight=0.85)
         scroll_x.place(relx=0.01, rely=0.95, relwidth=0.9)
 
-
-    
-    def isChecked(self):
-        
-        opt = self.mode_state.get()
-
-        theme = ""
-
-        if opt == 0:
-            theme = "journal"
-        elif opt == 1:
-            theme = "cyborg"
-
-        return theme   
+   
     
     def formulario(self):
 
@@ -350,8 +340,20 @@ class Ventana:
         animes_seen.grid(row=1, column=14, ipadx=2)
         animes_seen.config(command=self.animes_vistos_2024)
 
+        def isChecked():
+        
+            opt = self.mode_state.get()
+
+            theme = ""
+
+            if opt == 0:
+                theme = "journal"
+            elif opt == 1:
+                theme = "cyborg"
+
+            return theme
         #A checked button to switch dark and light mode
-        check = ttk.Checkbutton(master=self.panel, text="Modo oscuro", variable=self.mode_state, command=lambda:self.isChecked)
+        check = ttk.Checkbutton(master=self.panel, text="Modo oscuro", variable=self.mode_state, command=lambda:isChecked)
         check.grid(row=1, column=16, columnspan=2, ipadx=2)
         #check.config(command=lambda:self.isChecked)
 

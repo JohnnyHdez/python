@@ -48,10 +48,10 @@ ORDER BY "animes" ASC
 
 --Agregar nuevo anime
 INSERT INTO emission (id, name, season, chapters, state, year, next_chapter)
-VALUES(3955, "Re: Monster", 1, 2, "En emisión", "2024-04-01", "2024-04-08")
+VALUES(3993, "The New Gate", 1, 3, "En emisión", "2024-04-14", "2024-04-28")
 
 INSERT INTO emission (id, name, season, chapters, state, year, last_chapter)
-VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "Finalizado", "2024-04-17", "2024-04-20")
+VALUES(2887, "Death March kara Hajimaru Isekai Kyousoukyoku", 1, 12, "Finalizado", "2024-04-27", "2024-04-27")
 
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-22", "2024-03-23")
@@ -69,8 +69,8 @@ INSERT INTO generos (id, genero)
 VALUES (3956, "Aventura"), (3956, "Fantasía")
 
 --Actualizar lista de animes
-UPDATE emission SET state="Finalizado", next_chapter="", last_chapter="2024-04-01" WHERE id=3859
-UPDATE emission SET chapters=46, next_chapter="2024-04-12" WHERE id=3773
+UPDATE emission SET state="En emisión", next_chapter="2024-05-03", last_chapter="" WHERE id=3968
+UPDATE emission SET chapters=4, next_chapter="2024-05-04" WHERE id=3993
 UPDATE emission SET chapters=12 WHERE id=3929
 UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE id=3973
 UPDATE emission SET season=3 WHERE id=3929
