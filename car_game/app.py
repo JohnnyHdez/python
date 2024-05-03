@@ -10,9 +10,10 @@ WIDTH, HEIGHT = (400, 600)
 FRAME = pygame.display.set_mode((WIDTH, HEIGHT))
 MY_CAR = pygame.image.load(os.path.join('assets', 'sprites', 'car.png'))
 MY_ICON = pygame.image.load(os.path.join('assets', 'sprites', 'car.png'))
+
 MY_ICON = pygame.transform.scale(MY_ICON, (32, 32))
 
-CAR_SPEED = 5
+CAR_SPEED = 30
 car_pos = MY_CAR.get_rect()
 
 pygame.display.set_caption('Car Game')
@@ -33,6 +34,10 @@ my_font = pygame.font.SysFont('comicsansms', 16)
 running = True
 
 while running:
+    pygame.mixer.init()
+    car=pygame.mixer.Sound(os.path.join("assets","effects","car-changing-gears.mp3"))
+    # pygame.mixer.music.play()
+    car.play()
     clock.tick(FPS) #30 FPS
 
     for event in pygame.event.get():
@@ -41,8 +46,11 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key in [pygame.K_a, pygame.K_LEFT] and WIDTH > 0:
                 car_pos.x -= CAR_SPEED
-                print(car_pos.x)
-            
+                # print(car_pos.x)
+            if event.key in [pygame.K_d, pygame.K_RIGHT] and WIDTH < 600:
+                car_pos.x += CAR_SPEED
+                # print(car_pos.x)
+
     FRAME.fill(WHITE)
     pygame.draw.line(FRAME, BLACK, (195, 0), (195, HEIGHT), 10)
 
