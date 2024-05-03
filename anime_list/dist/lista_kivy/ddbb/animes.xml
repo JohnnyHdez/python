@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf8" ?>
+<animes>
+<id></id>
+<nombre></nombre>
+<emitido></emitido>
+<estado></estado>
+<temporada></temporada>
+<capitulo></capitulo>
+<autor></autor>
+<genero></genero>
+<proximo_capitulo></proximo_capitulo>
+<ultimo_capitulo></ultimo_capitulo>
+</animes>

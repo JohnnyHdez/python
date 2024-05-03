@@ -3,6 +3,7 @@
 import datetime
 from crud_animes import Crud
 import sqlite3
+import os
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
@@ -62,9 +63,9 @@ class MyList(Widget):
         super(MyList, self).__init__()
         query = "SELECT id, name, season, chapters, year, next_chapter FROM emission WHERE state LIKE 'En emisión' ORDER BY last_chaptter, name"
         select = ObjectProperty(None)
-        con = sqlite3.connect("./ddbb/animes.db")
+        con = sqlite3.connect(os.path.join('ddbb', 'animes.db'))
         cur = con.cursor()
-        select = cur.execute(query)
+        cur.execute(query)
 
         
 
@@ -121,7 +122,7 @@ class lista_kivy(App):
 
         #pane.add_widget(saludo)
 
-        return MyList()
+        return pane
 
 if __name__ == "__main__":
     crud = Crud()

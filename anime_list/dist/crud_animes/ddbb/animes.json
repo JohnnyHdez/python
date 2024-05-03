@@ -1,0 +1,41 @@
+[
+    {"ID":"3741",
+    "Nombre":"Saikyou Onmyouji no Isekai Tenseiki",
+    "Emitido":"2023-01-07",
+    "Temporada":2,
+    "Capítulos":10,
+    "Estado":"En emisión",
+    "Fecha_próximo_capítulo":"2023-03-18",
+    "Fecha_último_capítulo":""
+    },
+    {"ID":"3731",
+    "Nombre":"Isekai Nonbiri Nouka",
+    "Emitido":"2023-01-07",
+    "Temporada":1,
+    "Capítulos":11,
+    "Estado":"En emisión",
+    "Fecha_próximo_capítulo":"2023-03-24",
+    "Fecha_último_capítulo":""
+    },
+    {
+    "ID":"3731",
+    "Nombre":"Isekai wa Smartphone to Tomo ni. 2",
+    "Emitido":"2023-04-03",
+    "Temporada":1,
+    "Capítulos":0,
+    "Estado":"Próximo",
+    "Fecha_próximo_capítulo":"2023-04-03",
+    "Fecha_último_capítulo":""
+    },
+    {
+    "ID":"3731",
+    "Nombre":"Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV",
+    "Emitido":"2022-09-03",
+    "Temporada":1,
+    "Capítulos":22,
+    "Estado":"Finalizado",
+    "Fecha_próximo_capítulo":"",
+    "Fecha_último_capítulo":"2023-03-17"
+    }
+]
+
