@@ -115,8 +115,6 @@ class Crud:
 class Ventana:
     def __init__(self) -> None:
 
-        
-        #choice = self.isChecked()
         marco = ttk.Window(themename="cyborg")
         marco.geometry("950x350")
         marco.title("Mi lista de animes")
@@ -343,15 +341,14 @@ class Ventana:
         def isChecked():
         
             opt = self.mode_state.get()
-
-            theme = ""
+            self.thene = tk.StringVar()
 
             if opt == 0:
-                theme = "journal"
+                self.theme.set("journal")
             elif opt == 1:
-                theme = "cyborg"
+                self.theme.set("cyborg")
 
-            return theme
+    
         #A checked button to switch dark and light mode
         check = ttk.Checkbutton(master=self.panel, text="Modo oscuro", variable=self.mode_state, command=lambda:isChecked)
         check.grid(row=1, column=16, columnspan=2, ipadx=2)
