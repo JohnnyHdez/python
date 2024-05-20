@@ -70,7 +70,7 @@ VALUES (3956, "Aventura"), (3956, "Fantasía")
 
 --Actualizar lista de animes
 UPDATE emission SET state="En emisión", next_chapter="2024-05-03", last_chapter="" WHERE id=3968
-UPDATE emission SET chapters=4, next_chapter="2024-05-04" WHERE id=3993
+UPDATE emission SET chapters=6, next_chapter="2024-05-14" WHERE id=3982
 UPDATE emission SET chapters=12 WHERE id=3929
 UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE id=3973
 UPDATE emission SET season=3 WHERE id=3929
