@@ -116,7 +116,7 @@ class Ventana:
     def __init__(self) -> None:
 
         marco = ttk.Window(themename="cyborg")
-        marco.geometry("950x350")
+        marco.geometry("1000x350")
         marco.title("Mi lista de animes")
         marco.minsize(width=600, height=200)
 
@@ -266,7 +266,7 @@ class Ventana:
     
     def animes_vistos_2024(self):
         marco = tk.Toplevel()
-        marco.geometry("1000x400")
+        marco.geometry("1100x400")
         marco.minsize(width=900, height=300)
         marco.title("Animes vistos en 2024")
         
@@ -338,21 +338,6 @@ class Ventana:
         animes_seen.grid(row=1, column=14, ipadx=2)
         animes_seen.config(command=self.animes_vistos_2024)
 
-        def isChecked():
-        
-            opt = self.mode_state.get()
-            self.thene = tk.StringVar()
-
-            if opt == 0:
-                self.theme.set("journal")
-            elif opt == 1:
-                self.theme.set("cyborg")
-
-    
-        #A checked button to switch dark and light mode
-        check = ttk.Checkbutton(master=self.panel, text="Modo oscuro", variable=self.mode_state, command=lambda:isChecked)
-        check.grid(row=1, column=16, columnspan=2, ipadx=2)
-        #check.config(command=lambda:self.isChecked)
 
         #Cantidad de animes que veo en emisión
         mi_total = crud.total_animes()
