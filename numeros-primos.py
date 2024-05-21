@@ -11,7 +11,7 @@ def primos(*lista):
             for i in range(1, n+1): #hay que sumar uno al número para que sea inclusive
                 if n % i == 0: #si esta condicion se da hemos hallado un multiplo
                     mult += 1
-            if mult <= 2:
+            if mult == 2:
                 #los númmros primos sólo tiene dos multiplos
                 primos_lista.append(n)
                 
@@ -22,6 +22,6 @@ def primos(*lista):
         print('No hay números primos en estos valores')
     return primos_lista
 
-resultado = primos(1,2,3,4,5,6,7,8,9)
+resultado = primos(1,2,3,4,5,6,7,8,9,10)
 print(resultado)
 
