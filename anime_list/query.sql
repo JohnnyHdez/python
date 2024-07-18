@@ -53,6 +53,10 @@ VALUES(3993, "The New Gate", 1, 3, "En emisión", "2024-04-14", "2024-04-28")
 INSERT INTO emission (id, name, season, chapters, state, year, last_chapter)
 VALUES(2887, "Death March kara Hajimaru Isekai Kyousoukyoku", 1, 12, "Finalizado", "2024-04-27", "2024-04-27")
 
+--Nuevo anime con ID por defecto de la base de datos
+INSERT INTO emission (name, season, chapters, state, year, next_chapter)
+VALUES("Fairy Tail: 100 Year Quest", 4, 3, "En emisión", "2024-07-07", "2024-07-21")
+
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-22", "2024-03-23")
 
