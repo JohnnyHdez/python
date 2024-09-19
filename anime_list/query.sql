@@ -25,7 +25,7 @@ order by last_chapter, name
 SELECT count(id) as "Animes vistos en 2024" 
 FROM emission WHERE last_chapter like "2024%" AND state like "Finalizado"
 
-SELECT id, name, season, chapters, year, last_chapter
+SELECT id, name as 'Título', season as 'Temporada', chapters as 'Capítulos', year as 'Emitido', last_chapter as 'Ultimo capítulo'
 FROM emission WHERE state like "finalizado" AND last_chapter like "2024%"
 order by last_chapter, name
 
@@ -79,8 +79,8 @@ UPDATE emission SET chapters=12 WHERE id=3929
 UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE id=3973
 UPDATE emission SET season=3 WHERE id=3929
 UPDATE emission SET id=3917, next_chapter="2024-01-17" WHERE id=3971
-UPDATE emission SET state="Finalizado" WHERE id=3972
-UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2024-06-19" WHERE id=3988
+UPDATE emission SET state="Finalizado" WHERE id=4005
+UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2024-09-18" WHERE id=4005
 UPDATE emission SET state="Finalizado", chapters=11, next_chapter="", last_chapter="2024-06-19" WHERE id=3988
 UPDATE emission SET id=3930 WHERE id=3970
 UPDATE emission SET year="2023-07-06", last_chapter="2023-12-14" WHERE id=3838
