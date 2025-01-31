@@ -63,7 +63,7 @@ VALUES(4069, "Party kara Tsuihou", 1, 12, "Finalizado", "2024-10-05", "2024-12-2
 
 --Nuevo anime con ID por defecto de la base de datos
 INSERT INTO emission (name, season, chapters, state, year, next_chapter)
-VALUES("Solo Leveling", 2, 2, "En emisión", "2025-01-04", "2025-01-11")
+VALUES("Dragon Ball Daima", 7, 15, "En emisión", "2024-10-11", "2025-01-24")
 
 INSERT INTO emission (name, season, chapters, state, year, last_chapter)
 VALUES("Solo Leveling", 1, 12, "Finalizado", "2025-01-06", "2025-01-08")

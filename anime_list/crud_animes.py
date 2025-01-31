@@ -411,8 +411,20 @@ class Ventana:
         arial_10_bold = "Arial 10 bold"
 
         #Fecha actual
+        meses = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "obtubre", "noviembre", "diciembre")
+        semanas = ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo")
+
+        meses_jp = ("一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月")
+        semanas_jp = ("月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日")
         hoy = datetime.datetime.now()
-        hoy_str = datetime.datetime.strftime(hoy.date(), "%Y-%m-%d")
+        mes_actual = hoy.month
+        dia_actual = hoy.day
+        ango_actual = hoy.year
+        dia_semana = hoy.weekday()
+        #hoy_str = datetime.datetime.strftime(hoy.date(), "%Y-%m-%d")
+        hoy_str = "{}, {} de {} de {}".format(semanas[dia_semana], dia_actual, meses[mes_actual-1], ango_actual)
+        hoy_str_jp = "{}{}{}日, {}".format(ango_actual, meses_jp[mes_actual-1], dia_actual, semanas_jp[dia_semana])
+        
         ttk.Label(master=self.panel, text="Hoy = {}".format(hoy_str), font=(arial_10_bold), foreground="orange").grid(row=1, column=3)
         
         ttk.Label(master=self.panel, text="Animes total = {}".format(mi_total[0]), font=(arial_10_bold), foreground="orange").grid(row=1, column=1)
