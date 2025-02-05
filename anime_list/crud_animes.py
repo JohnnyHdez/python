@@ -71,8 +71,13 @@ class Crud:
         return records
     
     def agregar_registro(self, new_id: int, nombre: str, temporada: int, capitulos: int, estado: str, estreno: str, siguiente_capitulo: str):
+        query = ""
+        
+        if new_id != 0 or new_id != "" or new_id != "0":
+            query = "insert into emission(id, name, season, chapters, state, year, next_chapter) values ({}, '{}', {}, {}, '{}', '{}', '{}')".format(new_id, nombre, temporada, capitulos, estado, estreno, siguiente_capitulo)
+        else:
+            query = "insert into emission(name, season, chapters, state, year, next_chapter) values ('{}', {}, {}, '{}', '{}', '{}')".format(nombre, temporada, capitulos, estado, estreno, siguiente_capitulo)
 
-        query = "insert into emission(id, name, season, chapters, state, year, next_chapter) values ({}, '{}', {}, {}, '{}', '{}', '{}')".format(new_id, nombre, temporada, capitulos, estado, estreno, siguiente_capitulo)
         cur = self.con.cursor()
         cur.execute(query)
         self.con.commit()
