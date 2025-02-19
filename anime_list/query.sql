@@ -63,10 +63,10 @@ VALUES(4069, "Party kara Tsuihou", 1, 12, "Finalizado", "2024-10-05", "2024-12-2
 
 --Nuevo anime con ID por defecto de la base de datos
 INSERT INTO emission (name, season, chapters, state, year, next_chapter)
-VALUES("Dragon Ball Daima", 7, 15, "En emisión", "2024-10-11", "2025-01-24")
+VALUES("S-Rank Monster no 'Behemoth' dakedo, Neko to Machigawarete Elf Musume no Pet toshite Kurashitemasu", 1, 8, "En emisión", "2025-01-04", "2025-02-15")
 
 INSERT INTO emission (name, season, chapters, state, year, last_chapter)
-VALUES("Solo Leveling", 1, 12, "Finalizado", "2025-01-06", "2025-01-08")
+VALUES("Arifureta Shokugyou de Sekai Saikyou", 3, 16, "Finalizado", "2024-10-14", "2025-02-17")
 
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-06", "2024-03-23")
