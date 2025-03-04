@@ -63,10 +63,10 @@ VALUES(4069, "Party kara Tsuihou", 1, 12, "Finalizado", "2024-10-05", "2024-12-2
 
 --Nuevo anime con ID por defecto de la base de datos
 INSERT INTO emission (name, season, chapters, state, year, next_chapter)
-VALUES("S-Rank Monster no 'Behemoth' dakedo, Neko to Machigawarete Elf Musume no Pet toshite Kurashitemasu", 1, 8, "En emisión", "2025-01-04", "2025-02-15")
+VALUES("Oshi no KO", 1, 11, "En emisión", "2025-01-04", "2025-02-15")
 
 INSERT INTO emission (name, season, chapters, state, year, last_chapter)
-VALUES("Arifureta Shokugyou de Sekai Saikyou", 3, 16, "Finalizado", "2024-10-14", "2025-02-17")
+VALUES("Oshi no Ko", 2, 13, "Finalizado", "2025-02-21", "2025-02-24")
 
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-06", "2024-03-23")
@@ -92,7 +92,7 @@ UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE 
 UPDATE emission SET season=1 WHERE id=4075
 UPDATE emission SET id=3917, next_chapter="2024-01-17" WHERE id=3971
 UPDATE emission SET state="Finalizado" WHERE id=4005
-UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-01-05" WHERE id=3994
+UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-02-28" WHERE id=4082
 UPDATE emission SET state="Finalizado", chapters=11, next_chapter="", last_chapter="2024-06-19" WHERE id=3988
 UPDATE emission SET id=3930 WHERE id=3970
 UPDATE emission SET year="2023-07-06", last_chapter="2023-12-14" WHERE id=3838
