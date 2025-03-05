@@ -56,10 +56,10 @@ ORDER BY "animes" ASC
 
 --Agregar nuevo anime
 INSERT INTO emission (id, name, season, chapters, state, year, next_chapter)
-VALUES(3993, "The New Gate", 1, 3, "En emisión", "2024-04-14", "2024-04-28")
+VALUES(4054, "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen", 5, 15, "En emisión", "2024-10-03", "2025-03-05")
 
 INSERT INTO emission (id, name, season, chapters, state, year, last_chapter)
-VALUES(4069, "Party kara Tsuihou", 1, 12, "Finalizado", "2024-10-05", "2024-12-21")
+VALUES(4054, "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen", 5, 15, "Finalizado", "2024-10-05", "2024-12-21")
 
 --Nuevo anime con ID por defecto de la base de datos
 INSERT INTO emission (name, season, chapters, state, year, next_chapter)
