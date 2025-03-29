@@ -92,7 +92,7 @@ UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE 
 UPDATE emission SET season=1 WHERE id=4075
 UPDATE emission SET next_chapter="2025-04-11" WHERE id=3773
 UPDATE emission SET state="Finalizado" WHERE id=4005
-UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-03-20" WHERE id=4057
+UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-03-29" WHERE id=4080
 UPDATE emission SET state="Finalizado", chapters=11, next_chapter="", last_chapter="2024-06-19" WHERE id=3988
 UPDATE emission SET id=3930 WHERE id=3970
 UPDATE emission SET year="2023-07-06", last_chapter="2023-12-14" WHERE id=3838
