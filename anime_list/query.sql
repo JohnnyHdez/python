@@ -63,7 +63,7 @@ VALUES(4054, "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou
 
 --Nuevo anime con ID por defecto de la base de datos
 INSERT INTO emission (name, season, chapters, state, year, next_chapter)
-VALUES("Oshi no KO", 1, 11, "En emisión", "2025-01-04", "2025-02-15")
+VALUES("Kanchigai no Atelier Meister: Eiyuu Party no Moto Zatsuyougakari ga, Jitsu wa Sentou Igai ga SSS Rank Datta to Iu Yoku Aru Hanashi, Kensei ni Naru", 1, 3, "En emisión", "2025-04-05", "2025-04-13")
 
 INSERT INTO emission (name, season, chapters, state, year, last_chapter)
 VALUES("Oshi no Ko", 2, 13, "Finalizado", "2025-02-21", "2025-02-24")
@@ -71,11 +71,14 @@ VALUES("Oshi no Ko", 2, 13, "Finalizado", "2025-02-21", "2025-02-24")
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-06", "2024-03-23")
 
+INSERT INTO Finalizado (name, season, chapters, emited, last_chapter)
+VALUES("Ninja Kamui", 1, 13, "2025-03-31", "2025-04-02")
+
 INSERT INTO generos (id, genero) 
 VALUES (3909, "Histórico"), (3909, "Drama"), (3909, "Misterio")
 
 INSERT INTO generos (id, genero) 
-VALUES (3975, "Acción"), (3975, "Colegial"), (3975, "Shounen")
+VALUES (4088, "Acción"), (4088, "Aventura"), (4088, "Fantasia")
 
 INSERT INTO generos (id, genero) 
 VALUES (3955, "Isekai"), (3955, "Fantasía"), (3955, "Aventura"), (3955, "Acción")
@@ -92,7 +95,7 @@ UPDATE emission SET name="Rurouni Kenshin: Meiji Kenkaku Romantan (2023)" WHERE 
 UPDATE emission SET season=1 WHERE id=4075
 UPDATE emission SET next_chapter="2025-04-11" WHERE id=3773
 UPDATE emission SET state="Finalizado" WHERE id=4005
-UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-03-29" WHERE id=4080
+UPDATE emission SET state="Finalizado",next_chapter="", last_chapter="2025-04-03" WHERE id=4081
 UPDATE emission SET state="Finalizado", chapters=11, next_chapter="", last_chapter="2024-06-19" WHERE id=3988
 UPDATE emission SET id=3930 WHERE id=3970
 UPDATE emission SET year="2023-07-06", last_chapter="2023-12-14" WHERE id=3838
