@@ -13,6 +13,8 @@ FROM emission, generos
 WHERE state like "en emisión" AND emission.id = generos.id
 ORDER BY next_chapter, name
 
+SELECT name, season, chapters, genero FROM Finalizado, generos WHERE generos.id = Finalizado.id
+
 --Animes vistos del año 2023
 SELECT count(id) as "Animes vistos en 2023" 
 FROM emission WHERE last_chapter like "2023%" AND state like "Finalizado"
@@ -66,16 +68,16 @@ INSERT INTO emission (name, season, chapters, state, year, next_chapter)
 VALUES("Kanchigai no Atelier Meister: Eiyuu Party no Moto Zatsuyougakari ga, Jitsu wa Sentou Igai ga SSS Rank Datta to Iu Yoku Aru Hanashi, Kensei ni Naru", 1, 3, "En emisión", "2025-04-05", "2025-04-13")
 
 INSERT INTO emission (name, season, chapters, state, year, last_chapter)
-VALUES("Oshi no Ko", 2, 13, "Finalizado", "2025-02-21", "2025-02-24")
+VALUES("Ore wa Subete wo «Parry» suru", 1, 12, "Finalizado", "2025-04-16", "2025-04-17")
 
 INSERT INTO Finalizado (id, name, season, chapters, emited, last_chapter)
 VALUES(3909, "Kusuriya no Hitorigoto", 1, 24, "2023-10-06", "2024-03-23")
 
 INSERT INTO Finalizado (name, season, chapters, emited, last_chapter)
-VALUES("Ninja Kamui", 1, 13, "2025-03-31", "2025-04-02")
+VALUES("Parasyte", 1, 12, "2025-04-19", "2025-04-21")
 
 INSERT INTO generos (id, genero) 
-VALUES (3909, "Histórico"), (3909, "Drama"), (3909, "Misterio")
+VALUES (1635, "Acción"), (1635, "Sci-Fi"), (1635, "Drama"), (1635, "Psicológico"), (1635, "Seinen"), (1635, "Terror")
 
 INSERT INTO generos (id, genero) 
 VALUES (4088, "Acción"), (4088, "Aventura"), (4088, "Fantasia")
